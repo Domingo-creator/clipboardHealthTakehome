@@ -1,11 +1,6 @@
 const crypto = require("crypto");
 
 ////////////////// REFACTOR   ////////////////////
-/*
-I made a changes to the conditionals to remove unnessary checks.  These included:
-  - If event does no exit, no other checks need to be made, return TRIVIAL_PARTITION_KEY
-  - the only case that candidate would need to be stringfied is if event contained a non-string partitionKey.  
-*/
 
 exports.deterministicPartitionKey = (event) => {
   const TRIVIAL_PARTITION_KEY = "0";

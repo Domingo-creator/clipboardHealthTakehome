@@ -16,3 +16,22 @@ Based on the information given, break this ticket down into 2-5 individual ticke
 You will be graded on the level of detail in each ticket, the clarity of the execution plan within and between tickets, and the intelligibility of your language. You don't need to be a native English speaker, but please proof-read your work.
 
 ## Your Breakdown Here
+
+
+**
+Description: Add a new column to the Agent table for custom ID
+Acceptance criteria:
+Time/Effort Estimate: 1 hour
+Implementation Details:  Add a new column to the agent table for custom ID.  There may be problems if
+ agents work at multiple facilities.  This could be resolved in several ways. The best solution in my opinion is
+ restrict overlapping customIDs from any facility. 
+**
+
+
+**
+Description: Adjust generateReport to use the custom ID for that facility for each agent in the report
+Acceptance criteria:
+Time/Effort Estimate: 1 hour
+Implementation Details:  When generating the data for each agent, use the Agents.customID in the report instead of
+the internal database ID.
+**
